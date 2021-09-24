@@ -87,7 +87,7 @@ header {
   flex-direction: column;
   width: 100%;
   height: 40vh;
-  background: url("../images/logo/jblogo_bgw.png") center / cover;
+  background: url("/images/logo/jblogo_bgw.png") center / cover;
   position: relative;
 }
 
