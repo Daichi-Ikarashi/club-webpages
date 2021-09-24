@@ -208,7 +208,7 @@ section {
 .c-left-wrap-f {
   min-width: 30%;
   padding: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .contents-title {
@@ -580,7 +580,7 @@ footer {
     font-size: 12px;
     letter-spacing: 0.6;
     font-weight: 600;
-    background: #fff;
+    background: none;
   }
   .open span:after {
     top: 8px;
