@@ -554,7 +554,7 @@ footer {
   .close {
     position: absolute;
     top: 30px;
-    right: 30px;
+    right: 20px;
     display: flex;
     height: 30px;
     width: 30px;
@@ -569,7 +569,7 @@ footer {
     content: "";
     display: block;
     height: 1px;
-    width: 31px;
+    width: 32px;
     border-radius: 2px;
     background: #000;
     position: absolute;
