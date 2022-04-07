@@ -4,65 +4,104 @@
 	<meta charset="utf-8">
 	<title>Contact|岩手県立大学アカペラサークルJellyBrans公式HP</title>
 	<!-- レスポンシブ -->
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<!-- アイコン -->
-	<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true" ></script> 
-	<!-- CSS -->
-	<link rel="stylesheet" href="./css/reset.css">
-	<link rel="stylesheet" href="./css/style.css">
-	<!-- webフォント -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400&family=Lemonada:wght@300;400&family=Noto+Sans+JP&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
-</head>
-<body>
-	<!-- header 上部にSNSアイコン logoを背景  -->
-	<header>
-		<!-- sns ナビ -->
-		<div>
-			<ul class="top-sns-nav">
-				<li><a href="https://twitter.com/jellybeans_aca" target="_blank"><img class="sns-icon" src="./images/icon/icon_twitter_orange.png" alt=""></a></li>
-				<li><a href="https://www.instagram.com/jellybeans_ipu/" target="_blank"><img class="sns-icon" src="./images/icon/icon_instagram_orange.png" alt=""></a></li>
-				<li><a href="https://www.youtube.com/channel/UC5t73Ah_Gk1bxB33S8OMeRw" target="_blank"><img class="sns-icon" src="./images/icon/icon_youtube_orange.png" alt=""></a></li>
-			</ul>
-		</div>
-		<!-- site　ナビ -->
-		<div>
-			<ul class="site-nav en">
-				<li><a href="./index.html" class="nav-txt">Home</a></li>
-				<li><a href="./Band.html" class="nav-txt">Band</a></li>
-				<li><a href="./Event.html" class="nav-txt">Event</a></li>
-				<li><a href="./Contact.html" class="nav-txt">Contact</a></li>
-			</ul>
-		</div>
-		<!-- スマホ用ハンバーガーメニュー -->
-		<div class="hamburger_menu">
-			<input id="menu" type="checkbox">
-			<label for="menu" class="open"><span></span></label>
-			<label for="menu" class="back"></label>
-	
-			<aside>
-				<label for="menu" class="close" style="font-weight: bold;">✕</label>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- アイコン -->
+    <script
+      src="https://kit.fontawesome.com/30693162da.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/hamMenu.css" />
+    <!-- webフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400&family=Lemonada:wght@300;400&family=Noto+Sans+JP&family=Sawarabi+Mincho&display=swap"
+      rel="stylesheet"
+    />
+    <!-- js -->
+    <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- sns ナビ -->
+      <ul class="top-sns-nav">
+        <li>
+          <a
+            class="sns-icon fa-brands fa-twitter"
+            href="https://twitter.com/jellybeans_aca"
+            target="_blank"
+          ></a>
+        </li>
+        <li>
+          <a
+            class="sns-icon fa-brands fa-instagram"
+            href="https://www.instagram.com/jellybeans_ipu/"
+            target="_blank"
+          ></a>
+        </li>
+        <li>
+          <a
+            class="sns-icon fa-brands fa-youtube"
+            href="https://www.youtube.com/channel/UC5t73Ah_Gk1bxB33S8OMeRw"
+            target="_blank"
+          ></a>
+        </li>
+      </ul>
 
-				<nav>
-					<ul class="list_hamburger">
-						<li><a href="./index.html" class="en">Home</a></li>
-						<li><a href="./Band.html" class="en">Band</a></li>
-						<li><a href="./Event.html" class="en">Event</a></li>
-						<li><a href="./Contact.html" class="en">Contact</a></li>
-					</ul>
-				</nav>
-				<div class="side_footer">
-					<ul class="top-sns-nav">
-						<li><a href="https://twitter.com/jellybeans_aca" target="_blank"><img class="sns-icon" src="./images/icon/icon_twitter_black.png" alt=""></a></li>
-						<li><a href="https://www.instagram.com/jellybeans_ipu/" target="_blank"><img class="sns-icon" src="./images/icon/icon_instagram_black.png" alt=""></a></li>
-						<li><a href="https://www.youtube.com/channel/UC5t73Ah_Gk1bxB33S8OMeRw" target="_blank"><img class="sns-icon" src="./images/icon/icon_youtube_black.png" alt=""></a></li>
-					</ul>
-				</div>
-			</aside>
-		</div>
-		<!-- スマホ用ハンバーガーメニュー -->
-	</header>
+      <!-- site　ナビ -->
+      <div class="header-nav">
+        <img src="./images/logo/jblogo.png" alt="JBロゴ" />
+        <ul class="site-nav en">
+          <li><a href="./index.html" class="nav-txt">Home</a></li>
+          <li><a href="./Band.html" class="nav-txt">Band</a></li>
+          <li><a href="./Event.html" class="nav-txt">Event</a></li>
+          <li><a href="./Contact.html" class="nav-txt">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- ハンバーガーメニュー -->
+      <nav>
+        <!-- === メニューボタン === -->
+        <div class="menu-btn">
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+        <!-- === メニューボタン === -->
+        <div class="menu-bg">
+          <ul class="menu-container">
+            <li class="menu-item">
+              Home
+              <p class="ja">ホーム</p>
+            </li>
+            <li class="menu-item">
+              Band
+              <p class="ja">現役バンド一覧</p>
+            </li>
+            <li class="menu-item">
+              Event
+              <p class="ja">活動の様子</p>
+            </li>
+            <li class="menu-item">
+              Contact
+              <p class="ja">お問い合わせはコチラから</p>
+            </li>
+            <li class="sns-item">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- ハンバーガーメニュー -->
+    </header>
 	<main>
 		<!-- セクション　お問い合わせ -->
 		<section class="Contact">
@@ -98,5 +137,6 @@
 			<p class="footer-txt en">Copyright© JellyBeans All Rights Reserved.</p>
 		</div>
 	</footer>
+	<script src="./js/main.js"></script>
 </body>
 </html>
