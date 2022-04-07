@@ -1,0 +1,602 @@
+@charset "utf-8";
+
+/*==============================
+    基礎
+================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #fffff0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+li:hover {
+  cursor: pointer;
+}
+
+.en {
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.ja {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.9em;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+/*==============================
+    font
+================================*/
+/* 使用例
+font-family: 'Lato', sans-serif;
+font-family: 'Lemonada', cursive;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Sawarabi Mincho', sans-serif;
+*/
+
+/*==============================
+    section-title-wrap 見出し
+================================*/
+.section-title-wrap {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-left: solid 5px rgb(224, 115, 0);
+  background-color: #fff;
+  -webkit-filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3));
+}
+
+.en-title {
+  color: rgba(224, 115, 0, 0.8);
+  margin-bottom: -5px;
+}
+
+.ja-title {
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+header {
+  width: 100%;
+  height: 40vh;
+  background: url("../images/logo/jblogo_bgw.png") center / cover;
+  position: relative;
+  border-bottom: 2px dashed rgb(224, 115, 0);
+}
+
+/*==============================
+    SNSアイコン ul
+================================*/
+.top-sns-nav {
+  position: fixed;
+  top: 65px;
+  left: 0px;
+  border: 1px solid rgb(224, 115, 0);
+  border-left: none;
+  border-radius: 5px;
+  z-index: 50;
+}
+
+.top-sns-nav li {
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.top-sns-nav .sns-icon {
+  line-height: 40px;
+  font-size: 24px;
+  color: #000;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.top-sns-nav .sns-icon:hover {
+  transform: scale(1.15);
+}
+
+.top-sns-nav li:hover {
+  background-color: rgb(152, 202, 255);
+}
+
+/*==============================
+    サイトナビ div
+================================*/
+.header-nav {
+  width: 90%;
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid rgb(224, 115, 0);
+  border-radius: 25px;
+  z-index: 50;
+}
+.header-nav img {
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+.site-nav {
+  position: relative;
+  left: 30%;
+  top: 5px;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
+.site-nav li {
+  width: 20%;
+  pointer-events: none;
+}
+
+.nav-txt {
+  margin-left: 12px;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #333;
+  pointer-events: auto;
+  transition: 0.3s;
+}
+.nav-txt:hover {
+  color: rgb(224, 115, 0);
+  border-bottom: 1px solid rgb(224, 115, 0);
+}
+
+/*==============================
+    section
+================================*/
+section {
+  width: 100%;
+  padding: 20px;
+}
+
+/*==============================
+    コンテンツ contents-wrap
+================================*/
+.contents-wrap-f {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 10px;
+  background-color: white;
+  -webkit-filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3));
+}
+
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-left-wrap-f {
+  min-width: 30%;
+  padding: 10px;
+  text-align: left;
+}
+
+.contents-title {
+  min-width: 100px;
+  margin-bottom: 15px;
+  padding: 0 3px;
+  font-size: 1.25em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-bottom: solid 2px rgb(255, 77, 172);
+}
+
+.intro {
+  min-width: 60%;
+  padding: 10px;
+  letter-spacing: 1.2px;
+  line-height: 1.6;
+  border-radius: 5px;
+  border: 1px solid #f9d68bd4;
+}
+
+.swiper {
+  min-width: 40vw;
+  margin: auto 0;
+  border-radius: 5px;
+  background-color: lightgrey;
+}
+
+.swiper-img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+
+.leader-img {
+  min-width: 150px;
+  height: 140px;
+  margin: 15px auto;
+  border-radius: 50%;
+}
+
+.leader-name {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8em;
+}
+
+.msg {
+  min-width: 60%;
+  margin: auto 0;
+  padding: 10px;
+  letter-spacing: 1.2px;
+  line-height: 1.6;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #f9d68bd4;
+}
+
+/*==============================
+    団体概要
+================================*/
+.group-info {
+  margin: 0 auto;
+  padding-left: 10px;
+}
+.group-img {
+  margin: auto;
+  height: 40vh;
+  border-radius: 5px;
+}
+
+.group-img img {
+  display: block;
+  width: 100%;
+}
+
+/*==============================
+    お知らせ news
+================================*/
+.news-list li {
+  margin-bottom: 10px;
+}
+
+.date {
+  color: rgb(224, 115, 0);
+  letter-spacing: 1.25px;
+  margin-right: 40px;
+}
+
+/*==============================
+    イベント
+================================*/
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-name {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.event-img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin: 20px 0;
+}
+
+/*==============================
+    バンド一覧
+================================*/
+.band-info-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.band-info-item {
+  width: calc((100% / 3) - 30px);
+  padding: 20px;
+  margin: 15px;
+  border-radius: 5px;
+  border: solid 0.5px rgb(0, 0, 0);
+}
+
+.band-img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.band-name {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.band-txt {
+  font-size: 0.8em;
+  margin-bottom: 15px;
+}
+
+.band-tag {
+  padding: 0 3px;
+  font-size: 0.8em;
+  color: rgb(224, 115, 0);
+}
+
+/*==============================
+    お問い合わせ
+================================*/
+.attention-txt {
+  font-size: 1em;
+  font-weight: 600;
+  color: rgb(224, 115, 0);
+  margin-bottom: 10px;
+}
+
+.contact-wrap {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.contact-txt {
+  font-size: 1em;
+  line-height: 1.8;
+}
+
+.contact-info {
+  min-width: 60%;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #f9d68bd4;
+}
+
+.contact-info a,
+li {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/*==============================
+    footer
+================================*/
+footer {
+  width: 100%;
+}
+
+.footer-contents {
+  height: 100px;
+  background: rgb(224, 115, 0);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-sns-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-sns-nav img {
+  height: 20px;
+  opacity: 0.6;
+  margin-left: 20px;
+}
+
+.footer-sns-nav img:hover {
+  opacity: 1;
+}
+
+.footer-txt {
+  color: white;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+/*==============================
+    スマホ用
+================================*/
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .ja,
+  .en {
+    font-size: 0.6em;
+  }
+
+  .ja-title {
+    font-size: 0.9em;
+  }
+
+  header {
+    width: 100%;
+    height: 80px;
+    border: 1.5px solid rgb(224, 115, 0);
+  }
+
+  .top-sns-nav,
+  .site-nav {
+    position: absolute;
+    top: -30vh;
+    justify-content: center;
+  }
+
+  .top-sns-nav > li {
+    width: 40px;
+    background: none;
+    border: none;
+  }
+
+  .sns-icon,
+  .footer-sns-nav img {
+    opacity: 1;
+  }
+
+  .contents-wrap-f {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .band-info-item {
+    width: calc((100% / 2) - 20px);
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /*-- 🍔🍔🍔 ------------*/
+  .hamburger_menu {
+    display: block;
+  }
+
+  .list_hamburger {
+    margin-top: 40px;
+    list-style: none;
+  }
+
+  .list_hamburger a {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #000;
+    border-bottom: solid 1px #000;
+  }
+
+  .list_hamburger li {
+    height: 40px;
+  }
+
+  .side_footer {
+    position: relative;
+    height: 100px;
+    margin-top: auto;
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    left: -50vw;
+  }
+
+  input[type="checkbox"]:checked ~ aside {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 80vw;
+    height: 80vh;
+    min-width: 250px;
+    font-size: 1em;
+    background-color: #fff;
+    z-index: 50;
+  }
+
+  input[type="checkbox"]:checked ~ .back {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  /*-- ハンバーガーメニューボタン ----------*/
+  .open,
+  .close {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    z-index: 1;
+  }
+
+  .open span,
+  .open span:before,
+  .open span:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 32px;
+    border-radius: 2px;
+    background: #000;
+    position: absolute;
+  }
+
+  .open span:before {
+    top: -20px;
+    content: "menu";
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.6;
+    font-weight: 600;
+    background: none;
+  }
+  .open span:after {
+    top: 8px;
+  }
+
+  /*-- ハンバーガーメニューボタン ----------*/
+  _ .close {
+    margin-left: 5px;
+  }
+
+  /*-- 🍔🍔🍔 ------------*/
+
+  .footer-contents {
+    padding-top: 8px;
+    height: 55px;
+  }
+
+  .footer-sns-nav {
+    margin: 3px 0;
+    height: 15px;
+  }
+}

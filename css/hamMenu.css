@@ -1,0 +1,129 @@
+/*==============================
+    ハンバーガーメニュー　z-index 100
+================================*/
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 60px;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+  border-radius: 10px;
+}
+
+.menu-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 25px;
+  height: 2px;
+  background-color: #828282;
+  transition: 0.5s;
+}
+
+.menu-btn i:nth-of-type(1) {
+  top: calc(50% - 7px);
+}
+.menu-btn i:nth-of-type(2) {
+  top: 50%;
+}
+.menu-btn i:nth-of-type(3) {
+  top: calc(50% + 7px);
+}
+
+/* ボタンが押されたら */
+.menu-btn.active i {
+  background-color: #fff;
+}
+
+.menu-btn.active i:nth-of-type(1) {
+  transform: translateX(-50%) translateY(5px) rotate(45deg);
+}
+.menu-btn.active i:nth-of-type(2) {
+  opacity: 0;
+}
+.menu-btn.active i:nth-of-type(3) {
+  transform: translateX(-50%) translateY(-5px) rotate(-45deg);
+}
+
+/*==============================
+    画面全体を黒で覆う z-index 50
+================================*/
+.menu-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+}
+.menu-bg.active {
+  opacity: 1;
+  pointer-events: auto;
+  transition: 0.5s;
+}
+
+/*==============================
+    🍔メニューコンテナ z-index 75
+================================*/
+.menu-container {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  width: 0;
+  z-index: 75;
+  opacity: 0;
+  border-radius: 10px;
+  pointer-events: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-container.active {
+  width: 70%;
+  height: auto;
+  opacity: 1;
+  background-color: #333;
+
+  padding: 20px 30px;
+  transition: 0.5s;
+  pointer-events: auto;
+}
+.menu-container .menu-item {
+  width: 45%;
+  height: 80px;
+  border-bottom: 2px solid #ccc;
+  color: #fff;
+  margin: 0 20px 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.menu-container .menu-item:hover {
+  color: rgb(224, 115, 0);
+}
+
+.menu-container .menu-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.menu-container .sns-item {
+  margin-top: 20px;
+}
+
+.menu-container .sns-item i {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 12px;
+  transition: 0.3s;
+}
+.menu-container .sns-item i:hover {
+  color: rgb(224, 115, 0);
+  transform: scale(1.15);
+}
